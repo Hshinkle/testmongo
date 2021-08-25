@@ -1,0 +1,28 @@
+http://localhost:5000/students
+
+###
+http://localhost:5000/students/0002
+
+###
+POST  http://localhost:5000/students HTTP/1.1
+content-type: application/json
+
+{
+    "fname": "Albert",
+    "lname": "Hitchcock",
+    "grade": "D"
+}
+
+###
+DELETE http://localhost:5000/students/0003
+
+
+###
+PATCH  http://localhost:5000/students/0004 HTTP/1.1
+content-type: application/json
+
+{
+    "fname": "Alberto",
+    "lname": "Hitchcock",
+    "grade": "c"
+}
